@@ -1,0 +1,19 @@
+Transmission scheme:       	 	 Hadamard 
+Waveform selection:        	 	 LinearFM 
+TX-delay vector:           	 	 [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00] μs 
+Pulse duration:            	 	 2.00 μs
+RX duration:               	 	 16.62 μs
+Pulse Repetition Interval: 	 	 98 μs
+Pulse Repetition Frequency:	 	 10.20 kHz
+Burst Length:              	 	 76 pulses
+Burst Repetition Interval: 	 	 200.02 ms
+Burst Duty Cycle:          	 	 3.72 %
+
+Range Resolution:          	 	 1.50 m
+Max. unamb. Range:         	 	 0.30 km
+Doppler Resolution:        	 	 2.14 m/s
+Max. unamb. Doppler:       	 	 ± 10.2 m/s
+
+Observation Time:          	 	 200.02 ms
+Memory Requirement:        	 	 10 MB
+Read-out Time:             	 	 0.28 s

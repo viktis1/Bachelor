@@ -1,0 +1,63 @@
+
+simoTestFast = load("../SIMO_data/SIMO_data_Prop-A-Fast.mat");
+simoTestMed = load("../SIMO_data/SIMO_data_Prop-A-Med.mat");
+simoTestSlow = load("../SIMO_data/SIMO_data_Prop-A-Slow.mat");
+
+reflector1 = 8.08; %[m]
+reflector2 = 23.90; %[m]
+
+timeData_133713 = readtable("../måling/Log_2023-03-01_143713.csv");
+timeData_135648 = readtable("../måling/Log_2023-03-01_145648.csv");
+timeData_142316 = readtable("../måling/Log_2023-03-01_152316.csv");
+
+%% Plotting time data
+
+% [timeData_133713.Time_s_, timeData_133713.MotorOpticalSpeed_RPM_]
+% [timeData_135648.Time_s_, timeData_135648.MotorOpticalSpeed_Hz_]
+% [timeData_142316.Time_s_, timeData_142316.MotorOpticalSpeed_Hz_]
+
+% The time axis I will use will start in 13:37:13
+time_delay_1 = (56-37)*60 + 48-13
+time_delay_2 = (23 + 60-37)*60 + 16-13
+
+figure()
+hold on
+plot(timeData_133713.Time_s_, timeData_133713.MotorOpticalSpeed_RPM_/60)
+plot(timeData_135648.Time_s_+time_delay_1, timeData_135648.MotorOpticalSpeed_Hz_)
+plot(timeData_142316.Time_s_+time_delay_2, timeData_142316.MotorOpticalSpeed_Hz_)
+ylim([0, 70])
+
+
+%% mapping slow- and fast time
+fig = figure()
+subplot(1,3,1);
+hold on
+imagesc(simoTestFast.slowTimeBins*1e3, simoTestFast.rangeBins, abs(simoTestFast.cplxData))
+yline([reflector1, reflector2], 'r--', 'LineWidth',1.5)
+xlim([0, max(simoTestFast.slowTimeBins)])
+ylim([0, 30])
+xlabel('slow time [s]')
+ylabel('Range [m]')
+title('Fast rotor')
+
+subplot(1,3,2)
+hold on
+imagesc(simoTestMed.slowTimeBins*1e3, simoTestMed.rangeBins, abs(simoTestMed.cplxData))
+yline([reflector1, reflector2], 'r--', 'LineWidth',1.5)
+xlim([0, max(simoTestMed.slowTimeBins)])
+ylim([0, 30])
+xlabel('slow time [s]')
+ylabel('Range [m]')
+title('Medium rotor')
+
+subplot(1,3,3)
+hold on
+imagesc(simoTestSlow.slowTimeBins*1e3, simoTestSlow.rangeBins, abs(simoTestSlow.cplxData))
+yline([reflector1, reflector2], 'r--', 'LineWidth',1.5)
+xlim([0, max(simoTestSlow.slowTimeBins)])
+ylim([0, 30])
+xlabel('slow time [s]')
+ylabel('Range [m]')
+title('Slow rotor')
+
+

@@ -1,0 +1,19 @@
+Transmission scheme:       	 	 TDM_Staggered 
+Waveform selection:        	 	 LinearFM 
+TX-delay vector:           	 	 [0.00, 1.00, 2.00, 3.00, 4.00, 5.00, 6.00, 7.00] μs 
+Pulse duration:            	 	 8.00 μs
+RX duration:               	 	 15.62 μs
+Pulse Repetition Interval: 	 	 16 μs
+Pulse Repetition Frequency:	 	 62.50 kHz
+Burst Length:              	 	 4096 pulses
+Burst Repetition Interval: 	 	 1000.00 ms
+Burst Duty Cycle:          	 	 6.55 %
+
+Range Resolution:          	 	 0.75 m
+Max. unamb. Range:         	 	 0.15 km
+Doppler Resolution:        	 	 0.24 m/s
+Max. unamb. Doppler:       	 	 ± 498.3 m/s
+
+Observation Time:          	 	 8.00 s
+Memory Requirement:        	 	 4016 MB
+Read-out Time:             	 	 112.30 s
