@@ -1,0 +1,45 @@
+% Cabling of system
+% To be rectified
+
+% Script locations
+C:/Users/mimo/Documents/lasleh/Documentation/Operating the MIMO demonstrator
+
+% Data paths
+C:/Users/mimo/Documents/Micro-Doppler Trials - 01-03-23/Data Capture/Experiments/Data
+C:/Users/mimo/Documents/Micro-Doppler Trials - 01-03-23/Data Capture/Validation/Data
+
+% Waveforms 
+C:/Users/mimo/Documents/Micro-Doppler Trials - 01-03-23/Configuration Files/XXXXXXXXX
+
+% Code search directory
+C:/Users/mimo/Documents/lasleh/PC Contents
+C:/Users/mimo/Documents/lasleh/PC Contents/Documents/DTU Forskningsassistent/Script Generation for Xilinx Board
+"C:/Users/mimo/Documents/Micro-Doppler Trials - 01-03-23/Configuration Files/Waveforms/TDM_Staggered"
+C:\Users\mimo\Documents\Micro-Doppler Trials - 01-03-23\Configuration Files\Waveforms\TDM_Staggered
+
+*******************************************************
+	Data log: 
+*********** ********************************************
+Note: propel A: grafit, propel B: plastic + staniol, propel C: Drone m. staniol, propel D: Drone uden staniol
+13-24-08:  TDM-Stg 	- Reference
+13-31-51:  SIMO 	- Reference 
+13-39-10:  SIMO 	- propel A - 1600 RPM
+13-49-06:  TDM-Stg 	- propel A - 1600 RPM
+14-00-20:  TDM-Stg. - propel A - 47-50 Hz (max 3000 RPM)
+14-03-28:  SIMO   	- propel A - 47-50 Hz 
+14-12-45:  SIMO 	- propel A - 17 Hz
+14-16-37:  TDM-Stg 	- propel A - 17 Hz
+14-22-43:  TDM-Stg  - propel B - 47-50 Hz 
+14-26-13:  SIMO     - propel B - 47-50 Hz 
+14-44-38: St. TDM 	- corner reflector
+14-55-12: SIMO 		- propel C
+15-04-52: St. TDM   - propel C
+15-18-51: St. TDM   - propel D  flight/hover
+
+*******************************************************
+	Distance measurements: 
+*********** ********************************************
+2.62 m from radar to drone (Propel C)
+3.48 m from radar to table (drone arm) (Propel A + B)
+8.08 m from radar to corner reflector 
+23.90 m from radar to trihedral
